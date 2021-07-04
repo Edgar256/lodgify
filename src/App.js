@@ -91,19 +91,19 @@ function App() {
 					className="btn btn-success mr-2 py-1 rounded-custom"
 					onClick={viewAvailableHouses}
 				>
-					Available
+					{titleCase(AVAILABLE)}
 				</button>
 				<button
 					className="btn btn-primary mr-2 py-1 rounded-custom"
 					onClick={viewBookedHouses}
 				>
-					Booked
+					{titleCase(BOOKED)}
 				</button>
 				<button
 					className="btn btn-danger mr-2 py-1 rounded-custom"
 					onClick={viewUnavailableHouses}
 				>
-					Unavailable
+					{titleCase(UNAVAILABLE)}
 				</button>
 			</div>
 			<div className="container d-flex flex-wrap">
