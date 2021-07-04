@@ -1,0 +1,27 @@
+* {
+	margin: 0px 0px;
+}
+body {
+	margin: 0px 0px;
+}
+.house-card {
+	width: 25%;
+}
+.rounded-custom {
+	border-radius: 20px;
+}
+@media only screen and (max-width: 960px) {
+	.house-card {
+		width: 33.3%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.house-card {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.house-card {
+		width: 100%;
+	}
+}
