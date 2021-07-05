@@ -30,8 +30,8 @@ function App() {
 					}
 				});
 				availableHouses.map((elem) => (elem.status = AVAILABLE));
-        setStatus(AVAILABLE);
-        setCount(availableHouses.length)
+				setStatus(AVAILABLE);
+				setCount(availableHouses.length);
 				setHouses(availableHouses);
 			})
 			.catch((error) => {
@@ -49,8 +49,8 @@ function App() {
 			}
 		});
 		availableHouses.map((elem) => (elem.status = AVAILABLE));
-    setStatus(AVAILABLE);
-    setCount(availableHouses.length)
+		setStatus(AVAILABLE);
+		setCount(availableHouses.length);
 		setHouses(availableHouses);
 	};
 
@@ -58,8 +58,8 @@ function App() {
 	const viewBookedHouses = () => {
 		const bookedHouses = allHouses.filter((elem) => elem.booked > 0);
 		bookedHouses.map((elem) => (elem.status = BOOKED));
-    setStatus(BOOKED);
-    setCount(bookedHouses.length)
+		setStatus(BOOKED);
+		setCount(bookedHouses.length);
 		setHouses(bookedHouses);
 	};
 
@@ -73,7 +73,7 @@ function App() {
 			}
 		});
 		unavailableHouses.map((elem) => (elem.status = UNAVAILABLE));
-    setStatus(UNAVAILABLE);
+		setStatus(UNAVAILABLE);
 		setCount(unavailableHouses.length);
 		setHouses(unavailableHouses);
 	};
@@ -110,9 +110,9 @@ function App() {
 				{houses.length < 1 ? (
 					<span>No Data to show</span>
 				) : (
-					houses.map((house, id) => {
+					houses.map((house) => {
 						return (
-							<div className="house-card p-2 rounded" key={id}>
+							<div className="house-card p-2 rounded" key={house.id}>
 								<div className="card shadow">
 									<div className="d-block position-relative">
 										{house.status === "available" ? (
